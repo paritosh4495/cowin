@@ -150,27 +150,27 @@ body {
     box-shadow: 0 1px 5px 1px #cccccc;
   }
   #menu-tile {
-    background: url("./images/headache.png") no-repeat;
+    background: url("/images/headache.png") no-repeat;
     background-position: center;
   }
   #specials-tile {
-    background: url('./images/cough.png') no-repeat;
+    background: url('/images/cough.png') no-repeat;
     background-position: center;
   }
   #sore {
-    background: url('./images/sore.png') no-repeat;
+    background: url('/images/sore.png') no-repeat;
     background-position: center;
   }
   #breadth{
-    background: url('./images/breadth.png') no-repeat;
+    background: url('/images/breadth.png') no-repeat;
     background-position: center;
   }
   #fever {
-    background: url('./images/fever.png') no-repeat;
+    background: url('/images/fever.png') no-repeat;
     background-position: center;
   }
   #muscle {
-    background: url('./images/muscle.png') no-repeat;
+    background: url('/images/muscle.png') no-repeat;
     background-position: center;
   }
   #symp h2{
