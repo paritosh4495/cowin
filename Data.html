@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    
+    <title>COWIN-TRACKER</title>
+</head>
+<body>
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <a href="index.html" class="pull-left visible-md visible-lg">
+                <div id="logo-img" alt="Logo image"></div>
+              </a>
+    
+              <div class="navbar-brand">
+                <a href="index.html"><h1>COVID-19 TRACKER </h1></a>
+                <p>
+                  <img class="flag" src="images/flag.jpg" alt="Indian flag" >
+                  <span>India</span>
+                </p>
+              </div>
+    
+              <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            
+            <div id="collapsable-nav" class="collapse navbar-collapse">
+               <ul id="nav-list" class="nav navbar-nav navbar-right">
+                <li id="navHomeButton" class="visible-xs active">
+                  <a href="index.html">
+                    <span class="glyphicon glyphicon-home"></span> Home</a>
+                </li>
+                <li id="navMenuButton">
+                  <a href="#" onclick="$dc.loadMenuCategories();">
+                    <span class="glyphicon glyphicon-file"></span><br class="hidden-xs"> Data</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="glyphicon glyphicon-bed"></span><br class="hidden-xs"> Bed Availability</a>
+                </li>
+              
+                <li id="phone" class="hidden-xs">
+                  <a href="tel:410-602-5008">
+                    <span>910-602-5008</span></a><div>* Emergency!</div>
+                </li>
+              </ul><!-- #nav-list -->
+            </div><!-- .collapse .navbar-collapse -->
+          </div><!-- .container -->
+        </nav><!-- #header-nav -->
+      </header>
+      <div id="call-btn" class="visible-xs">
+        <a class="btn" href="tel:410-602-5008">
+        <span class="glyphicon glyphicon-earphone"></span>
+        910-602-5008
+        </a>
+      </div>
+      <div id="xs-deliver" class="text-center visible-xs">* Emergency!</div>
+      <div class="data " >
+        <div>
+          <h2>State wise covid data</h2>
+        </div>
+        <div class="data-table">
+          <table class="paleBlueRows">
+            <thead>
+            <tr>
+            <th>STATE NAME:</th>
+            <th>TOTAL</th>
+            <th>RECOVERED</th>
+           
+            <th>DEATHS</th>
+            </tr>
+            </thead>
+            
+            <tbody>
+            <tr>
+            <td>Andaman and Nicobar</td>
+            <td>10729</td>
+            <td>10598</td>
+            
+            <td>567</td>
+            </tr>
+            <tr>
+            <td>Andhra Pradesh</td>
+            <td>2338815</td>
+            <td>2323934</td>
+           
+            <td>14733</td>
+            </tr>
+            <tr>
+            <td>Arunachal Pradesh
+            </td>
+            <td>66874
+            </td>
+            <td>66571</td>
+            
+            <td>296</td>
+            </tr>
+            <tr>
+            <td>Assam</td>
+            <td>746001</td>
+            <td>735244</td>
+           
+            <td>8035</td>
+            </tr>
+            <tr>
+            <td>Bihar</td>
+            <td>851079</td>
+            <td>838615</td>
+          
+            <td>12302</td>
+            </tr>
+            <tr>
+            <td>Chandigarh</td>
+            <td>99287</td>
+            <td>98088</td>
+            
+            <td>1181</td>
+            </tr>
+            <tr>
+            <td>Dadra and Nagar Haveli and Daman and Diu</td>
+            <td>11588</td>
+            <td>11583</td>
+            
+            <td>4</td>
+            </tr>
+            <tr>
+            <td>Delhi</td>
+            <td>2005623</td>
+            <td>1978693</td>
+            
+            <td>26507</td>
+            </tr>
+            <tr>
+            <td>Goa
+            </td>
+            <td>258597</td>
+            <td>254532</td>
+            
+            <td>3967</td>
+            </tr>
+            <tr>
+            <td>Gujarat</td>
+            <td>1276531</td>
+            <td>1264895</td>
+            
+            <td>11038</td>
+            </tr>
+            <tr>
+            <td>Haryana</td>
+            <td>1055875</td>
+            <td>1044919</td>
+          
+            <td>10710</td>
+            </tr>
+            <tr>
+            <td>Himachal Pradesh</td>
+            <td>312427</td>
+            <td>308170</td>
+            
+            <td>4211</td>
+            </tr>
+            <tr>
+              <td>Jammu and Kashmir
+              </td>
+              <td>479266</td>
+              <td>474458</td>
+            
+              <td>4785</td>
+              </tr>
+              <tr>
+                <td>Jharkhand</td>
+                <td>442523</td>
+                <td>437124</td>
+              
+                <td>5331</td>
+                </tr>
+                <tr>
+                  <td>Karnataka</td>
+                  <td>4067953</td>
+                  <td>4025331</td>
+                
+                  <td>40296</td>
+                  </tr>
+                  <tr>
+                    <td>Kerala</td>
+                    <td>6819813</td>
+                    <td>6744574</td>
+                  
+                    <td>71354</td>
+                    </tr>
+                    <tr>
+                      <td>Ladakh</td>
+                      <td>29380</td>
+                      <td>29140</td>
+                    
+                      <td>231</td>
+                      </tr>
+                      <tr>
+                        <td>Maharashtra</td>
+                        <td>8129894</td>
+                        <td>7979019</td>
+                      
+                        <td>148379</td>
+                        </tr>
+                        <tr>
+                          <td>Manipur</td>
+                          <td>139867</td>
+                          <td>137692</td>
+                        
+                          <td>2149
+                          </td>
+                          </tr>
+                          <tr>
+                            <td>Meghalaya</td>
+                            <td>96750</td>
+                            <td>95099</td>
+                          
+                            <td>1623
+                            </td>
+                            </tr>
+                            <tr>
+                              <td>Mizoram</td>
+                              <td>238746</td>
+                              <td>237971</td>
+                            
+                              <td>723
+                              </td>
+                              </tr>
+                              <tr>
+                                <td>Madhya Pradesh
+                                </td>
+                                <td>1054682</td>
+                                <td>1043796</td>
+                              
+                                <td>10775
+                                </td>
+                                </tr>
+                                <tr>
+                                  <td>Nagaland</td>
+                                  <td>35972</td>
+                                  <td>35188</td>
+                                
+                                  <td>782
+                                  </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Rajasthan</td>
+                                    <td>1314162
+                                    </td>
+                                    <td>1304127</td>
+                                  
+                                    <td>9644
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                      <td>Uttar Pradesh
+                                      </td>
+                                      <td>2127310</td>
+                                      <td>2103244</td>
+                                    
+                                      <td>23627
+                                      </td>
+                                      </tr>
+            </tbody>
+            </table>
+        </div>
+      </div>
+
+    
+      <footer class="panel-footer">
+        <div class="container">
+          <div class="row">
+            <section id="hours" class="col-sm-4">
+              <span>Useful Links:</span><br>
+              <ul class="usefulLinks">
+                <li><a  style="text-decoration:none ; color: aliceblue;"  href="https://covid19.who.int/">Covid WHO</a></li>
+                
+                <li><a  style="text-decoration:none ;  color: aliceblue;" href="https://www.cowin.gov.in/">Cowin</a></li>
+                
+                <li><a style="text-decoration:none ; color: aliceblue;" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">Centers for disease control and Prevention</a></li>
+              
+              <hr class="visible-xs">
+            </section>
+            <section id="address" class="col-sm-4">
+              <span>Address:</span><br>
+              B2- Cerebrum IT park<br>
+              Kalyani Nagar, Pune 41225
+              
+              <hr class="visible-xs">
+            </section>
+            <section id="testimonials" class="col-sm-4">
+              <p>"In every crisis, doubt or confusion, take the higher path - the path of compassion, courage, understanding and love."</p>
+              <p>"We are in this together"</p>
+            </section>
+          </div>
+          <div class="text-center">&copy; COVID-19. All Rights Reserved</div>
+        </div>
+      </footer>
+      <script src="js/scripts.js"></script>
+      <script src="js/jquery-2.1.4.min.js"></script>
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/ajax-utils.js"></script>
+
+    
+</body>
+</html>
